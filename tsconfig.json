@@ -1,9 +1,18 @@
 {
-  "compilerOptions": {
-    "module": "es6",
+	"compilerOptions": {
+		"module": "commonjs",
 		"target": "es6",
-		"baseUrl": "./src", 
-		"moduleResolution": "node",
-    "outDir": "./dist",
+		//  "moduleResolution": "node",
+		"esModuleInterop": true,
+		"outDir": "js_out",
+		"noImplicitAny": false,
+		"sourceMap": false,
+		"baseUrl": "./src",
+		"paths": {
+         "*": ["./*"]
+		}
+	},
+     "ts-node": {
+    "require": ["tsconfig-paths/register"]
   }
 }

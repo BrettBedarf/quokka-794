@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "compile": "tsc -p .",
-    "start": "ts-node --esm index"
+    "start": "ts-node src/index"
   },
   "keywords": [],
   "author": "",
